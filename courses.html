@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses | ISBAT University</title>
+
+    <link rel="stylesheet" href="portal.css">
+
+    <!-- Internal CSS: Timetable course colours -->
+    <style>
+        .webtech {
+            background-color: #DCEBFA;
+            color: #174A75;
+        }
+
+        .cprog {
+            background-color: #E8DDF7;
+            color: #542783;
+        }
+
+        .database {
+            background-color: #FCE8D5;
+            color: #85440B;
+        }
+
+        .networking {
+            background-color: #DDF2E4;
+            color: #205B35;
+        }
+
+        .timetable td {
+            text-align: center;
+            font-weight: 600;
+            padding: 14px 8px;
+        }
+
+        .timetable .time {
+            background-color: #f1f1f5;
+            color: #333;
+        }
+
+        .break {
+            background-color: #f7f7f7;
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            ISBAT
+            <span>UNIVERSITY</span>
+        </div>
+
+        <div class="student-info">
+            <h3>Alex Nambasa</h3>
+            <p>Student</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="courses.html" class="active-link">My Courses</a>
+            <a href="fee-statement.html">Fee Statement</a>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="page-header">
+            <div>
+                <h1>My Courses</h1>
+                <p>Academic Year 2026/2027 | Semester One</p>
+            </div>
+        </header>
+
+        <!-- Enrolled Courses -->
+        <section class="section">
+
+            <h2>Enrolled Courses</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Lecturer</th>
+                            <th>Room</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>BIT 2101</td>
+                            <td>Web Technologies</td>
+                            <td>3</td>
+                            <td>Mr. Kato</td>
+                            <td>Lab 2</td>
+                            <td>
+                                <span style="background: #E1F5EE; color: #085041; padding: 6px 12px; border-radius: 15px;">
+                                    Active
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BIT 2102</td>
+                            <td>Computer Programming</td>
+                            <td>4</td>
+                            <td>Ms. Nakato</td>
+                            <td>Room 104</td>
+                            <td>
+                                <span style="background: #E1F5EE; color: #085041; padding: 6px 12px; border-radius: 15px;">
+                                    Active
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BIT 2103</td>
+                            <td>Database Systems</td>
+                            <td>3</td>
+                            <td>Mr. Ssemanda</td>
+                            <td>Lab 1</td>
+                            <td>
+                                <span style="background: #E1F5EE; color: #085041; padding: 6px 12px; border-radius: 15px;">
+                                    Active
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BIT 2104</td>
+                            <td>Data Communications</td>
+                            <td>3</td>
+                            <td>Mr. Okello</td>
+                            <td>Room 203</td>
+                            <td>
+                                <span style="background: #FAEEDA; color: #633806; padding: 6px 12px; border-radius: 15px;">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BIT 2105</td>
+                            <td>Systems Analysis and Design</td>
+                            <td>3</td>
+                            <td>Ms. Achieng</td>
+                            <td>Room 105</td>
+                            <td>
+                                <span style="background: #E1F5EE; color: #085041; padding: 6px 12px; border-radius: 15px;">
+                                    Active
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BIT 2106</td>
+                            <td>Mathematics for Computing</td>
+                            <td>2</td>
+                            <td>Mr. Mugisha</td>
+                            <td>Room 202</td>
+                            <td>
+                                <span style="background: #FAEEDA; color: #633806; padding: 6px 12px; border-radius: 15px;">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- Weekly Timetable -->
+        <section class="section">
+
+            <h2>Weekly Timetable</h2>
+
+            <div class="table-container">
+                <table class="timetable">
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="time">8:00 - 9:00</td>
+                            <td class="webtech" rowspan="2">Web Technologies</td>
+                            <td class="cprog" rowspan="2">Computer Programming</td>
+                            <td></td>
+                            <td class="database" rowspan="2">Database Systems</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">9:00 - 10:00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">10:00 - 11:00</td>
+                            <td></td>
+                            <td></td>
+                            <td class="networking" rowspan="2">Data Communications</td>
+                            <td></td>
+                            <td class="webtech" rowspan="2">Web Technologies</td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">11:00 - 12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">12:00 - 13:00</td>
+                            <td class="break" colspan="5">Lunch Break</td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">13:00 - 14:00</td>
+                            <td class="database" rowspan="2">Database Systems</td>
+                            <td></td>
+                            <td class="cprog" rowspan="2">Computer Programming</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">14:00 - 15:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">15:00 - 16:00</td>
+                            <td></td>
+                            <td class="networking" rowspan="2">Data Communications</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="time">16:00 - 17:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
